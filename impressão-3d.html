@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Impressão 3D | Fabricação Digital</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Impressão 3D | Fabricação Digital" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Impressão 3D | Fabricação Digital" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Jhonata Pinheiro Dias" />
+
+
+<meta name="date" content="2024-07-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="máquina-a-laser.html"/>
+<link rel="next" href="soldagem.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre a Materia</a></li>
+<li class="chapter" data-level="2" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html"><i class="fa fa-check"></i><b>2</b> Máquinas CNC</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#origens"><i class="fa fa-check"></i><b>2.1</b> Origens</a></li>
+<li class="chapter" data-level="2.2" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#terminologias"><i class="fa fa-check"></i><b>2.2</b> Terminologias</a></li>
+<li class="chapter" data-level="2.3" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#configurações-de-máquina"><i class="fa fa-check"></i><b>2.3</b> Configurações de Máquina</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#operação"><i class="fa fa-check"></i><b>2.3.1</b> Operação</a></li>
+<li class="chapter" data-level="2.3.2" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#estrutura"><i class="fa fa-check"></i><b>2.3.2</b> Estrutura</a></li>
+<li class="chapter" data-level="2.3.3" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#guias-e-suportes"><i class="fa fa-check"></i><b>2.3.3</b> Guias e Suportes</a></li>
+<li class="chapter" data-level="2.3.4" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#motores"><i class="fa fa-check"></i><b>2.3.4</b> Motores</a></li>
+<li class="chapter" data-level="2.3.5" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#acopladores"><i class="fa fa-check"></i><b>2.3.5</b> Acopladores</a></li>
+<li class="chapter" data-level="2.3.6" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#transmissão"><i class="fa fa-check"></i><b>2.3.6</b> Transmissão</a></li>
+<li class="chapter" data-level="2.3.7" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#eletrônica"><i class="fa fa-check"></i><b>2.3.7</b> Eletrônica</a></li>
+<li class="chapter" data-level="2.3.8" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#software"><i class="fa fa-check"></i><b>2.3.8</b> Software</a></li>
+<li class="chapter" data-level="2.3.9" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#ferramenta"><i class="fa fa-check"></i><b>2.3.9</b> Ferramenta</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#segurança"><i class="fa fa-check"></i><b>2.4</b> Segurança</a></li>
+<li class="chapter" data-level="2.5" data-path="máquinas-cnc.html"><a href="máquinas-cnc.html#fluxo-de-trabalho"><i class="fa fa-check"></i><b>2.5</b> Fluxo de Trabalho</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html"><i class="fa fa-check"></i><b>3</b> Máquina a Laser</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#o-que-é-uma-máquina-a-laser"><i class="fa fa-check"></i><b>3.1</b> O Que é uma Máquina a Laser?</a></li>
+<li class="chapter" data-level="3.2" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#como-funciona-a-máquina-a-laser"><i class="fa fa-check"></i><b>3.2</b> Como Funciona a Máquina a Laser?</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#estrutura-1"><i class="fa fa-check"></i><b>3.2.1</b> Estrutura</a></li>
+<li class="chapter" data-level="3.2.2" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#processo-de-corte"><i class="fa fa-check"></i><b>3.2.2</b> Processo de Corte</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#prática-projeto-da-caixa"><i class="fa fa-check"></i><b>3.3</b> Prática: Projeto da Caixa</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="impressão-3d.html"><a href="impressão-3d.html"><i class="fa fa-check"></i><b>4</b> Impressão 3D</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="impressão-3d.html"><a href="impressão-3d.html#o-que-é-impressora-3d"><i class="fa fa-check"></i><b>4.1</b> O Que é Impressora 3D ?</a></li>
+<li class="chapter" data-level="4.2" data-path="impressão-3d.html"><a href="impressão-3d.html#como-funciona-a-impressora-3d"><i class="fa fa-check"></i><b>4.2</b> Como Funciona a Impressora 3D</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="impressão-3d.html"><a href="impressão-3d.html#estrutura-e-componentes"><i class="fa fa-check"></i><b>4.2.1</b> Estrutura e Componentes</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="impressão-3d.html"><a href="impressão-3d.html#prática-impressão-de-peça-para-um-projeto."><i class="fa fa-check"></i><b>4.3</b> Prática: Impressão de peça para um projeto.</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="soldagem.html"><a href="soldagem.html"><i class="fa fa-check"></i><b>5</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="soldagem.html"><a href="soldagem.html#o-processo-de-soldagem"><i class="fa fa-check"></i><b>5.1</b> O Processo de Soldagem</a></li>
+<li class="chapter" data-level="5.2" data-path="soldagem.html"><a href="soldagem.html#prática"><i class="fa fa-check"></i><b>5.2</b> Prática</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fabricação Digital</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="impressão-3d" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Impressão 3D<a href="impressão-3d.html#impressão-3d" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="04.jpeg" style="display:block; margin:0 auto;;width:50.0%" /></p>
+<center>
+Fig 4: Impressora 3D.
+</center>
+<div id="o-que-é-impressora-3d" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> O Que é Impressora 3D ?<a href="impressão-3d.html#o-que-é-impressora-3d" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p style="text-align: justify;">
+Uma impressora 3D é uma máquina que cria objetos tridimensionais a partir de modelos digitais, adicionando material camada por camada até formar o objeto desejado. A tecnologia de impressão 3D revolucionou diversas indústrias, permitindo a fabricação rápida e personalizada de protótipos, peças funcionais e até produtos finais. A capacidade de criar formas complexas com precisão e eficiência tem feito da impressão 3D uma ferramenta indispensável em várias indústrias.
+</p>
+</div>
+<div id="como-funciona-a-impressora-3d" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Como Funciona a Impressora 3D<a href="impressão-3d.html#como-funciona-a-impressora-3d" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="estrutura-e-componentes" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Estrutura e Componentes<a href="impressão-3d.html#estrutura-e-componentes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p style="text-align: justify;">
+A impressora 3D é composta de diversos componentes principais que trabalham juntos para criar objetos tridimensionais. Entre esses componentes estão os eixos, os fins de curso, o bico de impressão e o material utilizado, como o PLA. Os eixos são fundamentais para o movimento da impressora 3D, ela possui três eixos x, y e z. o eixo X é responsável pelo movimento lateral (esquerda e direita). O eixo Y é responsável pelo movimento frontal e traseiro (para frente e para trás). Enquanto o eixo Z é responsável pelo movimento vertical (para cima e para baixo).
+</p>
+<p style="text-align: justify;">
+Essas movimentações , são essenciais para posicionar o bico de impressão na localização correta para depositar o material de forma precisa. Além do mais, o motor Fim de curso são de extrema importância para que exista essa precisão, eles operam delimitando os percursos em que o bico de impressão vai percorrer evitando danos à máquina e garantindo precisão no despejo do material. O bico de impressão, é o componente que derrete e despeja o material de impressão camada por camada. O bico aquece o material PLA até que ele se torne maleável.O material utilizado como matéria prima é o PLA,que é um termoplástico biodegradável derivado de recursos renováveis e com capacidade de degradar em ácido lático. O PLA é amplamente utilizado devido à sua facilidade de uso, boa qualidade de impressão e menor tendência a deformações, tornando-o ideal para uma ampla gama de aplicações.
+</p>
+</div>
+</div>
+<div id="prática-impressão-de-peça-para-um-projeto." class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Prática: Impressão de peça para um projeto.<a href="impressão-3d.html#prática-impressão-de-peça-para-um-projeto." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p style="text-align: justify;">
+Para colocar em prática os conhecimentos que adquiri sobre o processo da impressão 3D, resolvi imprimir uma peça que será utilizado no projeto final, essa peça trata-se de um joelho que irá dar movimento a um quadrúpede. Quanto ao processo de impressão, foi iniciado com a criação de um modelo tridimensional fornecido pelo site Thingiverse utilizando o software Auto CAD.
+</p>
+<p><img src="05.jpeg" style="display:block; margin:0 auto;;width:40.0%" /></p>
+<center>
+Fig 5: Peça desejada.
+</center>
+<p style="text-align: justify;">
+Após os ajustes do modelo digital, foi então importado para um software de fatiamento o Cura. Este software realiza o fatiamento da peça, que é nada mais que dividir o modelo em camadas finas, e gerar um arquivo G-code contendo todas as instruções necessárias para a impressora 3D. Foi realizada a configuração da impressora, incluindo o nivelamento da cama de construção. Este ajuste manual garante que a primeira camada de impressão adere corretamente à superfície, evitando falhas na impressão subsequente.
+</p>
+<p style="text-align: justify;">
+Após todo o processo descrito acima, foi carregado o filamento PLA inserido na extrusora da impressora. A cabeça de impressão e a cama de construção são então aquecidas às temperaturas apropriadas entre 180-220°C para a cabeça de impressão e cerca de 60°C para a cama, preparadas para o início do processo de impressão. Com o arquivo G-code carregado, a impressão é iniciada, a cabeça de impressão se movimenta de acordo com as instruções, depositando o filamento derretido camada por camada até que o objeto esteja completo.
+</p>
+<p><img src="06.jpeg" style="display:block; margin:0 auto;;width:40.0%" /></p>
+<center>
+Fig 6: Inicio do processo de impressão da peça.
+</center>
+<p><img src="07.jpeg" style="display:block; margin:0 auto;;width:40.0%" /></p>
+<center>
+Fig 7: Peça impressa.
+</center>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="máquina-a-laser.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="soldagem.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03impressao.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
